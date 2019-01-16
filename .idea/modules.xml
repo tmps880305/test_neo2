@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.example.test_neofrs.iml" filepath="$PROJECT_DIR$/.idea/modules/com.example.test_neofrs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.example.test_neofrs.main.iml" filepath="$PROJECT_DIR$/.idea/modules/com.example.test_neofrs.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.example.test_neofrs.test.iml" filepath="$PROJECT_DIR$/.idea/modules/com.example.test_neofrs.test.iml" />
+    </modules>
+  </component>
+</project>
