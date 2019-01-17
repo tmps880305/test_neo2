@@ -15,7 +15,7 @@ public class RecordAjaxApi {
     @Autowired
     HitRecordDao hitRecordDao;
 
-    @RequestMapping(value = "record/getHitRecordAjax", method = RequestMethod.POST)
+    @RequestMapping(value = "getHitRecordAjax", method = RequestMethod.POST)
     public List<HitRecord> getHitRecordAjax(@RequestBody Integer id) {
         List<HitRecord> hitRecords = hitRecordDao.findAllById(id);
 

@@ -8,23 +8,20 @@
             $.ajax({
                 contentType: 'application/json; charset=UTF-8',
                 type: "post",
-                url: "record/getHitRecordAjax",
+                url: "getHitRecordAjax",
                 data: id,
                 sync: true,
                 success: function (data) {
                     var str = "";
                     console.log(data);
-                    str += "<a>";
                     $.each(data, function (index, value) {
-                        str += "value.id" + ":" + value.name + "</a>";
+                        str += "<option>" + value.id + value.name + "</option>";
                     });
                     $("#showHitRecord").empty();
-                    $("#showHitRecord").append(" ");
                     $("#showHitRecord").append(str);
                 },
-                error: function (jqXHR, exception) {
-                    ajaxError(jqXHR, exception);
-                    $("#showHitRecord").empty();
+                error: function () {
+                    console.log("ERRRRRRROOOOORRRRR");
                 },
             });
         }
@@ -34,11 +31,18 @@
 <body>
 <p>I am front</p>
 
+<div>
+    <label for="showHitRecord">See Hits</label>
+    <select class="" name="showHitRecord" id="showHitRecord">
+    </select>
+    <button type="button" onclick="getHitRecord(1)">Go</button>
+</div>
+
+
 </body>
-
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.0/moment.min.js"></script>
 <script>
-
-
 </script>
 
 </html>

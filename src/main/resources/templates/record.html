@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Hello</title>
+    <title>Record</title>
     <script>
         function getHitRecord(id) {
             $.ajax({
                 contentType: 'application/json; charset=UTF-8',
                 type: "post",
-                url: "getHitRecordAjax",
+                url: "record/getHitRecordAjax",
                 data: id,
                 sync: true,
                 success: function (data) {
@@ -20,8 +20,9 @@
                     $("#showHitRecord").empty();
                     $("#showHitRecord").append(str);
                 },
-                error: function () {
+                error: function (jqXHR, exception) {
                     console.log("ERRRRRRROOOOORRRRR");
+                    $("#showHitRecord").empty();
                 },
             });
         }
@@ -29,20 +30,20 @@
 
 </head>
 <body>
-<p>I am front</p>
+<p>I am record</p>
 
 <div>
     <label for="showHitRecord">See Hits</label>
     <select class="" name="showHitRecord" id="showHitRecord">
     </select>
-    <button type="button" onclick="getHitRecord(1)">Go</button>
 </div>
 
 
 </body>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.0/moment.min.js"></script>
+
 <script>
+
+
 </script>
 
 </html>

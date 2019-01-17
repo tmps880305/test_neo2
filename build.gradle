@@ -31,4 +31,5 @@ dependencies {
     runtimeOnly 'org.springframework.boot:spring-boot-devtools'
     runtimeOnly 'com.microsoft.sqlserver:mssql-jdbc'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    compile group: 'org.webjars', name: 'jquery', version: '2.1.3'
 }
