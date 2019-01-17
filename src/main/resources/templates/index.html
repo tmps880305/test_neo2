@@ -3,9 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <title>Hello</title>
+    <script>
+        function getHitRecord(id) {
+            $.ajax({
+                contentType: 'application/json; charset=UTF-8',
+                type: "post",
+                url: "record/getHitRecordAjax",
+                data: id,
+                sync: true,
+                success: function (data) {
+                    var str = "";
+                    console.log(data);
+                    str += "<a>";
+                    $.each(data, function (index, value) {
+                        str += "value.id" + ":" + value.name + "</a>";
+                    });
+                    $("#showHitRecord").empty();
+                    $("#showHitRecord").append(" ");
+                    $("#showHitRecord").append(str);
+                },
+                error: function (jqXHR, exception) {
+                    ajaxError(jqXHR, exception);
+                    $("#showHitRecord").empty();
+                },
+            });
+        }
+    </script>
+
 </head>
 <body>
-    <p>I am front</p>
+<p>I am front</p>
 
 </body>
+
+<script>
+
+
+</script>
+
 </html>

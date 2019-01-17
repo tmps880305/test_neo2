@@ -14,6 +14,5 @@ public class TestNeofrsApplication {
     public static void main(String[] args) throws Exception {
         SpringApplication.run(SpringRestTemplateApp.class, args);
     }
-
 }
 

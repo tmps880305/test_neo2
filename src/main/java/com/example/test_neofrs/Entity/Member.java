@@ -1,4 +1,4 @@
-package com.example.test_neofrs.testConnect;
+package com.example.test_neofrs.Entity;
 
 public class Member {
     private Integer id;
