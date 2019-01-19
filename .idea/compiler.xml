@@ -4,6 +4,8 @@
     <bytecodeTargetLevel>
       <module name="com.example.test_neofrs.main" target="1.8" />
       <module name="com.example.test_neofrs.test" target="1.8" />
+      <module name="com.oppo.test_neofrs.main" target="1.8" />
+      <module name="com.oppo.test_neofrs.test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
