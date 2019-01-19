@@ -8,8 +8,7 @@
             $.ajax({
                 contentType: 'application/json; charset=UTF-8',
                 type: "post",
-                url: "record/hitRecord",
-                data: id,
+                url: "/hitRecord",
                 sync: true,
                 success: function (data) {
                     var str = "";
@@ -35,7 +34,7 @@
     <label for="showHitRecord">See Hits</label>
     <select class="" name="showHitRecord" id="showHitRecord">
     </select>
-    <button type="button" onclick="getHitRecord(1)">Go</button>
+    <button type="button" onclick="getHitRecord()">Go</button>
 </div>
 
 
