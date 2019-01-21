@@ -24,6 +24,20 @@
                 },
             });
         }
+        function post(id) {
+            $.ajax({
+                contentType: 'application/json; charset=UTF-8',
+                type: "post",
+                url: "/post",
+                sync: true,
+                success: function (data) {
+                    console.log(data);
+                },
+                error: function () {
+                    console.log("ERRRRRRROOOOORRRRR");
+                },
+            });
+        }
     </script>
 
 </head>
@@ -35,6 +49,7 @@
     <select class="" name="showHitRecord" id="showHitRecord">
     </select>
     <button type="button" onclick="getHitRecord()">Go</button>
+    <button type="button" onclick="post()">Go2</button>
 </div>
 
 
