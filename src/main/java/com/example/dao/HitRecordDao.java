@@ -6,6 +6,6 @@ import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 
 import java.util.List;
 
-public interface HitRecordDao extends JpaRepository<HitRecord, String>, JpaSpecificationExecutor<HitRecord> {
+public interface HitRecordDao extends JpaRepository<HitRecord, Integer>, JpaSpecificationExecutor<HitRecord> {
     List<HitRecord> findAllById(Integer id);
 }
