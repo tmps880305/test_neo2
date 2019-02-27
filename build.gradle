@@ -70,5 +70,6 @@ dependencies {
     compile group: 'joda-time', name: 'joda-time', version: '2.9.4'
     runtimeOnly('com.microsoft.sqlserver:mssql-jdbc')
     compile group: 'net.minidev', name: 'json-smart', version: '1.0.9'
+    runtime('mysql:mysql-connector-java')
 }
 

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <h1>Hello World</h1>
+    <title>Log in</title>
+</head>
+<body>
+    <input id="account" type="text" placeholder="Account"/>
+    <input id="password" type="password" placeholder="Password"/>
+
+    <button type="button" onclick="login()">Confirm</button>
+
+</body>
+<script>
+    function login(){
+        var acc = document.getElementById("account").value;
+        var pas = document.getElementById("password").value;
+        alert(acc+":"+pas);
+    }
+</script>
+</html>

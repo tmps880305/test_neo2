@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class com.example.test_neofrs.TestNeofrsApplicationTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class com.example.test_neofrs.TestNeofrsApplicationTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.example.test_neofrs.html">com.example.test_neofrs</a> &gt; TestNeofrsApplicationTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">1</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.002s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">0%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="contextLoads"></a>
+<h3 class="failures">contextLoads</h3>
+<span class="code">
+<pre>java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:125)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:106)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:66)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:117)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:155)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:137)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerAdapter' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]: Factory method 'requestMappingHandlerAdapter' threw exception; nested exception is java.lang.NoClassDefFoundError: net/minidev/json/writer/JsonReaderI
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:590)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1256)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1105)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:503)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:139)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117)
+	... 49 more
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]: Factory method 'requestMappingHandlerAdapter' threw exception; nested exception is java.lang.NoClassDefFoundError: net/minidev/json/writer/JsonReaderI
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:582)
+	... 66 more
+Caused by: java.lang.NoClassDefFoundError: net/minidev/json/writer/JsonReaderI
+	at com.jayway.jsonpath.internal.DefaultsImpl.&lt;init&gt;(DefaultsImpl.java:17)
+	at com.jayway.jsonpath.internal.DefaultsImpl.&lt;clinit&gt;(DefaultsImpl.java:15)
+	at com.jayway.jsonpath.Configuration.getEffectiveDefaults(Configuration.java:48)
+	at com.jayway.jsonpath.Configuration.access$000(Configuration.java:34)
+	at com.jayway.jsonpath.Configuration$ConfigurationBuilder.build(Configuration.java:229)
+	at org.springframework.data.web.JsonProjectingMethodInterceptorFactory.&lt;init&gt;(JsonProjectingMethodInterceptorFactory.java:75)
+	at org.springframework.data.web.ProjectingJackson2HttpMessageConverter.initProjectionFactory(ProjectingJackson2HttpMessageConverter.java:87)
+	at org.springframework.data.web.ProjectingJackson2HttpMessageConverter.&lt;init&gt;(ProjectingJackson2HttpMessageConverter.java:72)
+	at org.springframework.data.web.config.SpringDataWebConfiguration.extendMessageConverters(SpringDataWebConfiguration.java:163)
+	at org.springframework.web.servlet.config.annotation.WebMvcConfigurerComposite.extendMessageConverters(WebMvcConfigurerComposite.java:144)
+	at org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration.extendMessageConverters(DelegatingWebMvcConfiguration.java:123)
+	at org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport.getMessageConverters(WebMvcConfigurationSupport.java:756)
+	at org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport.requestMappingHandlerAdapter(WebMvcConfigurationSupport.java:563)
+	at org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration.requestMappingHandlerAdapter(WebMvcAutoConfiguration.java:467)
+	at org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration$$EnhancerBySpringCGLIB$$e294876d.CGLIB$requestMappingHandlerAdapter$4(&lt;generated&gt;)
+	at org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration$$EnhancerBySpringCGLIB$$e294876d$$FastClassBySpringCGLIB$$c7d84d53.invoke(&lt;generated&gt;)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:361)
+	at org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration$$EnhancerBySpringCGLIB$$e294876d.requestMappingHandlerAdapter(&lt;generated&gt;)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 67 more
+Caused by: java.lang.ClassNotFoundException: net.minidev.json.writer.JsonReaderI
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 91 more
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="failures">contextLoads</td>
+<td class="failures">0.002s</td>
+<td class="failures">failed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>18:00:01.002 [Test worker] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.example.test_neofrs.TestNeofrsApplicationTests]
+18:00:01.012 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+18:00:01.019 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+18:00:01.039 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.example.test_neofrs.TestNeofrsApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+18:00:01.051 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.test_neofrs.TestNeofrsApplicationTests], using SpringBootContextLoader
+18:00:01.054 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.example.test_neofrs.TestNeofrsApplicationTests]: class path resource [com/example/test_neofrs/TestNeofrsApplicationTests-context.xml] does not exist
+18:00:01.054 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.example.test_neofrs.TestNeofrsApplicationTests]: class path resource [com/example/test_neofrs/TestNeofrsApplicationTestsContext.groovy] does not exist
+18:00:01.054 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.test_neofrs.TestNeofrsApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+18:00:01.055 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.test_neofrs.TestNeofrsApplicationTests]: TestNeofrsApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+18:00:01.097 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.example.test_neofrs.TestNeofrsApplicationTests]
+18:00:01.102 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Adding PropertySource 'systemProperties' with lowest search precedence
+18:00:01.102 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Adding PropertySource 'systemEnvironment' with lowest search precedence
+18:00:01.103 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [MapPropertySource@1086288139 {name='systemProperties', properties={java.runtime.name=Java(TM) SE Runtime Environment, sun.boot.library.path=/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/lib, java.vm.version=25.191-b12, gopherProxySet=false, java.vm.vendor=Oracle Corporation, java.vendor.url=http://java.oracle.com/, path.separator=:, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, file.encoding.pkg=sun.io, sun.java.launcher=SUN_STANDARD, user.country=TW, sun.os.patch.level=unknown, java.vm.specification.name=Java Virtual Machine Specification, user.dir=/Users/jenix/IdeaProjects/test_neofrs2, java.runtime.version=1.8.0_191-b12, java.awt.graphicsenv=sun.awt.CGraphicsEnvironment, java.endorsed.dirs=/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/lib/endorsed, os.arch=x86_64, java.io.tmpdir=/var/folders/z_/v0sqr1ys3h96fw3wsds86k9w0000gn/T/, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, user.variant=, os.name=Mac OS X, sun.jnu.encoding=UTF-8, java.library.path=/Users/jenix/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:., java.specification.name=Java Platform API Specification, java.class.version=52.0, org.gradle.native=false, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, os.version=10.12.6, http.nonProxyHosts=local|*.local|169.254/16|*.169.254/16, user.home=/Users/jenix, user.timezone=Asia/Taipei, java.awt.printerjob=sun.lwawt.macosx.CPrinterJob, file.encoding=UTF-8, java.specification.version=1.8, java.class.path=/Users/jenix/IdeaProjects/test_neofrs2/build/classes/java/test:/Users/jenix/IdeaProjects/test_neofrs2/build/resources/test:/Users/jenix/IdeaProjects/test_neofrs2/build/classes/java/main:/Users/jenix/IdeaProjects/test_neofrs2/build/resources/main:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-test/2.0.3.RELEASE/1c624b1cc217bac010abce7a28df8169af4a7fa0/spring-boot-starter-test-2.0.3.RELEASE.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-web/2.0.3.RELEASE/41fd4180bea3813de8f3c602b5a126218360315b/spring-boot-starter-web-2.0.3.RELEASE.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-data-jpa/2.0.3.RELEASE/56c909f49b5385793942158e143187ecc8c7b54a/spring-boot-starter-data-jpa-2.0.3.RELEASE.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-thymeleaf/2.0.3.RELEASE/7a8cf11f5b7faa244e1979df491811bc0c858743/spring-boot-starter-thymeleaf-2.0.3.RELEASE.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-json/2.0.3.RELEASE/2e389a8727588c549c28bb277f0f573f65554850/spring-boot-starter-json-2.0.3.RELEASE.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-aop/2.0.3.RELEASE/a78c7bc25fd51b217f078421dc40d13ddc3b9f8f/spring-boot-starter-aop-2.0.3.RELEASE.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-jdbc/2.0.3.RELEASE/4f5f3411692a0f5efb60f7f583bdfcf49199a3d4/spring-boot-starter-jdbc-2.0.3.RELEASE.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter/2.0.3.RELEASE/ffaa050dbd36b0441645598f1a7ddaf67fd5e678/spring-boot-starter-2.0.3.RELEASE.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/5.0.7.RELEASE/751c871527ec7ff335ffc76f2e737e297c0a8d30/spring-webmvc-5.0.7.RELEASE.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/5.0.7.RELEASE/2e04c6c2922fbfa06b5948be14a5782db168b6ec/spring-web-5.0.7.RELEASE.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-jpa/2.0.8.RELEASE/8b874afd15da2b4d2d9b8431ad2be0c6829e41fe/spring-data-jpa-2.0.8.RELEASE.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.springframework/spring-test/5.0.7.RELEASE/bcb7505a316ea34b7e9a7ae5d4921be5b475c02d/spring-test-5.0.7.RELEASE.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-devtools/2.0.3.RELEASE/478e12e423b45d182a409f12a28fb9f0cddf84bf/spring-boot-devtools-2.0.3.RELEASE.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-test-autoconfigure/2.0.3.RELEASE/54e7d2167f2b926bf16a0ef8b91b6bfbd43826e7/spring-boot-test-autoconfigure-2.0.3.RELEASE.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-autoconfigure/2.0.3.RELEASE/11bc4cc96b08fabad2b3186755818fa0b32d83f/spring-boot-autoconfigure-2.0.3.RELEASE.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-test/2.0.3.RELEASE/5c9b4bb6cfce9ef6e53a0ff5fc4a7ff2867871d8/spring-boot-test-2.0.3.RELEASE.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/2.0.3.RELEASE/b874870d915adbc3dd932e19077d3d45c8e54aa0/spring-boot-2.0.3.RELEASE.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/5.0.7.RELEASE/243a23f8968de8754d8199d669780d683ab177bd/spring-context-5.0.7.RELEASE.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/5.0.7.RELEASE/fdd0b6aa3c9c7a188c3bfbf6dfd8d40e843be9ef/spring-aop-5.0.7.RELEASE.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.springframework/spring-orm/5.0.7.RELEASE/4deed5f4a38d62f9dba7db8e010da8b49e322757/spring-orm-5.0.7.RELEASE.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.springframework/spring-jdbc/5.0.7.RELEASE/9c78c6b9a6c603f6589b480e165939cde7bab7f9/spring-jdbc-5.0.7.RELEASE.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-commons/2.0.8.RELEASE/5c19af63b5acb0eab39066684e813d5ecd9d03b7/spring-data-commons-2.0.8.RELEASE.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.springframework/spring-tx/5.0.7.RELEASE/4ca59b21c61162adb146ad1b40c30b60d8dc42b8/spring-tx-5.0.7.RELEASE.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/5.0.7.RELEASE/c1196cb3e56da83e3c3a02ef323699f4b05feedc/spring-beans-5.0.7.RELEASE.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/5.0.7.RELEASE/ca01fb473f53dd0ee3c85663b26d5dc325602057/spring-expression-5.0.7.RELEASE.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/5.0.7.RELEASE/54b731178d81e66eca9623df772ff32718208137/spring-core-5.0.7.RELEASE.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-tomcat/2.0.3.RELEASE/25a51a75bfb997b7b95d6760178ee3303863ec4b/spring-boot-starter-tomcat-2.0.3.RELEASE.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.webjars/bootstrap/4.1.1/cf2c181ebc4c1b0ce34705355d17fa2828fede99/bootstrap-4.1.1.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.webjars/jquery/3.3.1-1/1a206dd935b3379b08111feb8fcfdcd81739a480/jquery-3.3.1-1.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.xhtmlrenderer/flying-saucer-pdf-itext5/9.1.6/594a31543f139456e26ff07b3e592ae0d979b4f3/flying-saucer-pdf-itext5-9.1.6.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.xhtmlrenderer/flying-saucer-core/9.1.6/d82caf70f624eac9fd081539c0dc7b317968b956/flying-saucer-core-9.1.6.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/net.sf.jtidy/jtidy/r938/ab08d87a225a715a69107732b67f21e1da930349/jtidy-r938.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/joda-time/joda-time/2.9.4/1c295b462f16702ebe720bbb08f62e1ba80da41b/joda-time-2.9.4.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/com.jayway.jsonpath/json-path/2.4.0/765a4401ceb2dc8d40553c2075eb80a8fa35c2ae/json-path-2.4.0.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/net.minidev/json-smart/1.0.9/740cece59da8261afe49585a0ea207981ac5aeb/json-smart-1.0.9.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/mysql/mysql-connector-java/5.1.46/9a3e63b387e376364211e96827bc27db8d7a92e9/mysql-connector-java-5.1.46.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/com.microsoft.sqlserver/mssql-jdbc/6.2.2.jre8/a9ee2b0234f623f49fad888550011035b99d0861/mssql-jdbc-6.2.2.jre8.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.springframework/spring-jcl/5.0.7.RELEASE/699016ddf454c2c167d9f84ae5777eccadf54728/spring-jcl-5.0.7.RELEASE.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/javax.annotation/javax.annotation-api/1.3.2/934c04d3cfef185a8008e7bf34331b79730a9d43/javax.annotation-api-1.3.2.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-websocket/8.5.31/6564e716b89de5eaa0dd234ae7989576503ddf3/tomcat-embed-websocket-8.5.31.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/8.5.31/f5adf7ed8c34aa005b22b6a2dc7b6796e10e9c79/tomcat-embed-core-8.5.31.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-el/8.5.31/3a536e1ac71b82627c3a7408eb38fa0704cb9034/tomcat-embed-el-8.5.31.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.hibernate.validator/hibernate-validator/6.0.10.Final/4236051a8d209c00f85e70918d5e26d9f3e5201e/hibernate-validator-6.0.10.Final.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-core/5.2.17.Final/f2dc36470e7a2ffcf6106bb1625ecf5b54bb5f65/hibernate-core-5.2.17.Final.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/javax.transaction/javax.transaction-api/1.2/d81aff979d603edd90dcd8db2abc1f4ce6479e3e/javax.transaction-api-1.2.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aspects/5.0.7.RELEASE/afd3f7ecb9d7c2cb3160563f9f64b72223bb0265/spring-aspects-5.0.7.RELEASE.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.webjars/popper.js/1.14.1/45b284e3e86f310b72e0d78ec298f5d1d2c68b62/popper.js-1.14.1.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/com.itextpdf/itextpdf/5.5.11/4c66347f10e9dbf062a086e1223a0d0a9eeb3677/itextpdf-5.5.11.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.thymeleaf/thymeleaf-spring5/3.0.9.RELEASE/abf84efd83808a70d982d2790f7f3a7bd3a39cf4/thymeleaf-spring5-3.0.9.RELEASE.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.thymeleaf.extras/thymeleaf-extras-java8time/3.0.1.RELEASE/d23760d1e53cd70c489ef40dc94ee6bd2371cceb/thymeleaf-extras-java8time-3.0.1.RELEASE.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/2973d150c0dc1fefe998f834810d68f278ea58ec/junit-4.12.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.assertj/assertj-core/3.9.1/c5ce126b15f28d56cd8f960c1a6a058b9c9aea87/assertj-core-3.9.1.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.mockito/mockito-core/2.15.0/b84bfbbc29cd22c9529409627af6ea2897f4fa85/mockito-core-2.15.0.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-library/1.3/4785a3c21320980282f9f33d0d1264a69040538f/hamcrest-library-1.3.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/42a25dc3219429f0e5d060061f71acb49bf010a0/hamcrest-core-1.3.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.skyscreamer/jsonassert/1.5.0/6c9d5fe2f59da598d9aefc1cfc6528ff3cf32df3/jsonassert-1.5.0.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.xmlunit/xmlunit-core/2.5.1/4ffdb346572a7356f7521cd3119ce5287d2e339d/xmlunit-core-2.5.1.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-logging/2.0.3.RELEASE/7caad34f01d2688919e15e09a90467963e3d5190/spring-boot-starter-logging-2.0.3.RELEASE.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.yaml/snakeyaml/1.19/2d998d3d674b172a588e54ab619854d073f555b5/snakeyaml-1.19.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/2.9.6/456895fc91bf7180b216fead220373e6278230c9/jackson-datatype-jdk8-2.9.6.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/2.9.6/ea54f6193d224e5e5732bbd4262327eb465397c2/jackson-datatype-jsr310-2.9.6.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.module/jackson-module-parameter-names/2.9.6/129acd77a4b6ee30d62d3a0899b1344c8ec2bff8/jackson-module-parameter-names-2.9.6.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.9.6/cfa4f316351a91bfd95cb0644c6a2c95f52db1fc/jackson-databind-2.9.6.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/javax.validation/validation-api/2.0.1.Final/cb855558e6271b1b32e716d24cb85c7f583ce09e/validation-api-2.0.1.Final.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.hibernate.common/hibernate-commons-annotations/5.0.1.Final/71e1cff3fcb20d3b3af4f3363c3ddb24d33c6879/hibernate-commons-annotations-5.0.1.Final.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.jboss.logging/jboss-logging/3.3.2.Final/3789d00e859632e6c6206adc0c71625559e6e3b0/jboss-logging-3.3.2.Final.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/com.fasterxml/classmate/1.3.4/3d5f48f10bbe4eb7bd862f10c0583be2e0053c6/classmate-1.3.4.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.aspectj/aspectjweaver/1.8.13/ad94df2a28d658a40dc27bbaff6a1ce5fbf04e9b/aspectjweaver-1.8.13.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/com.zaxxer/HikariCP/2.7.9/a83113d2c091d0d0f853dad3217bd7df3beb6ae3/HikariCP-2.7.9.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.hibernate.javax.persistence/hibernate-jpa-2.1-api/1.0.2.Final/52afb5762c704a6b586e27742470c08f91877fc1/hibernate-jpa-2.1-api-1.0.2.Final.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.javassist/javassist/3.22.0-GA/3e83394258ae2089be7219b971ec21a8288528ad/javassist-3.22.0-GA.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/antlr/antlr/2.7.7/83cd2cd674a217ade95a4bb83a8a14f351f48bd0/antlr-2.7.7.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.jboss/jandex/2.0.3.Final/bfc4d6257dbff7a33a357f0de116be6ff951d849/jandex-2.0.3.Final.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/dom4j/dom4j/1.6.1/5d3ccc056b6f056dbf0dddfdf43894b9065a8f94/dom4j-1.6.1.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.thymeleaf/thymeleaf/3.0.9.RELEASE/64185cca50ac808ad034841c84b4013f955465d2/thymeleaf-3.0.9.RELEASE.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-classic/1.2.3/7c4f3c474fb2c041d8028740440937705ebb473a/logback-classic-1.2.3.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-to-slf4j/2.10.0/f7e631ccf49cfc0aefa4a2a728da7d374c05bd3c/log4j-to-slf4j-2.10.0.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.slf4j/jul-to-slf4j/1.7.25/af5364cd6679bfffb114f0dec8a157aaa283b76/jul-to-slf4j-1.7.25.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.25/da76ca59f6a57ee3102f8f9bd9cee742973efa8a/slf4j-api-1.7.25.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy/1.7.11/f02857a4e2c66ccbe7aaad6100a0a6c461bce9b3/byte-buddy-1.7.11.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.7.11/b425a8933ca07edd03c6dbc8bc3b595fba9780de/byte-buddy-agent-1.7.11.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.objenesis/objenesis/2.6/639033469776fd37c08358c6b92a4761feb2af4b/objenesis-2.6.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/com.vaadin.external.google/android-json/0.0.20131108.vaadin1/fa26d351fe62a6a17f5cda1287c1c6110dec413f/android-json-0.0.20131108.vaadin1.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.9.0/7c10d545325e3a6e72e06381afe469fd40eb701/jackson-annotations-2.9.0.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.9.6/4e393793c37c77e042ccc7be5a914ae39251b365/jackson-core-2.9.6.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.attoparser/attoparser/2.0.4.RELEASE/5cf02c4d8303a81f0c80971bb1dcd40d3ba96009/attoparser-2.0.4.RELEASE.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.unbescape/unbescape/1.1.5.RELEASE/46dc644ea9c234317d926ebac5bf5d8f114dc1ba/unbescape-1.1.5.RELEASE.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-core/1.2.3/864344400c3d4d92dfeb0a305dc87d953677c03c/logback-core-1.2.3.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.10.0/fec5797a55b786184a537abd39c3fa1449d752d6/log4j-api-2.10.0.jar, user.name=jenix, java.vm.specification.version=1.8, sun.java.command=worker.org.gradle.process.internal.worker.GradleWorkerMain 'Gradle Test Executor 4', java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre, sun.arch.data.model=64, user.language=zh, java.specification.vendor=Oracle Corporation, awt.toolkit=sun.lwawt.macosx.LWCToolkit, java.vm.info=mixed mode, java.version=1.8.0_191, java.ext.dirs=/Users/jenix/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java, sun.boot.class.path=/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/classes, java.vendor=Oracle Corporation, org.gradle.test.worker=4, file.separator=/, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, sun.io.unicode.encoding=UnicodeBig, sun.cpu.endian=little, socksNonProxyHosts=local|*.local|169.254/16|*.169.254/16, ftp.nonProxyHosts=local|*.local|169.254/16|*.169.254/16, sun.cpu.isalist=}}, SystemEnvironmentPropertySource@45815052 {name='systemEnvironment', properties={PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:~/.dotnet/tools:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/usr/local/mysql/bin/:/Users/jenix/Library/Android/sdk/tools:/Users/jenix/Library/Android/sdk/platform-tools, SHELL=/bin/bash, VERSIONER_PYTHON_PREFER_32_BIT=no, USER=jenix, ANDROID_HOME=/Users/jenix/Library/Android/sdk, TMPDIR=/var/folders/z_/v0sqr1ys3h96fw3wsds86k9w0000gn/T/, SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.ZIQby7tC1P/Listeners, XPC_FLAGS=0x0, VERSIONER_PYTHON_VERSION=2.7, __CF_USER_TEXT_ENCODING=0x1F5:0x2:0x35, Apple_PubSub_Socket_Render=/private/tmp/com.apple.launchd.9h5DuhEjfM/Render, LOGNAME=jenix, LC_CTYPE=zh_TW.UTF-8, JAVA_MAIN_CLASS_7469=worker.org.gradle.process.internal.worker.GradleWorkerMain, XPC_SERVICE_NAME=com.jetbrains.intellij.6576, HOME=/Users/jenix}}]
+18:00:01.113 [Test worker] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved classpath location [com/example/test_neofrs/] to resources [URL [file:/Users/jenix/IdeaProjects/test_neofrs2/build/classes/java/test/com/example/test_neofrs/]]
+18:00:01.114 [Test worker] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [/Users/jenix/IdeaProjects/test_neofrs2/build/classes/java/test/com/example/test_neofrs]
+18:00:01.114 [Test worker] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [/Users/jenix/IdeaProjects/test_neofrs2/build/classes/java/test/com/example/test_neofrs] for files matching pattern [/Users/jenix/IdeaProjects/test_neofrs2/build/classes/java/test/com/example/test_neofrs/*.class]
+18:00:01.116 [Test worker] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved location pattern [classpath*:com/example/test_neofrs/*.class] to resources [file [/Users/jenix/IdeaProjects/test_neofrs2/build/classes/java/test/com/example/test_neofrs/TestNeofrsApplicationTests.class]]
+18:00:01.137 [Test worker] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved classpath location [com/example/] to resources [URL [file:/Users/jenix/IdeaProjects/test_neofrs2/build/classes/java/test/com/example/], URL [file:/Users/jenix/IdeaProjects/test_neofrs2/build/classes/java/main/com/example/]]
+18:00:01.137 [Test worker] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [/Users/jenix/IdeaProjects/test_neofrs2/build/classes/java/test/com/example]
+18:00:01.138 [Test worker] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [/Users/jenix/IdeaProjects/test_neofrs2/build/classes/java/test/com/example] for files matching pattern [/Users/jenix/IdeaProjects/test_neofrs2/build/classes/java/test/com/example/*.class]
+18:00:01.138 [Test worker] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [/Users/jenix/IdeaProjects/test_neofrs2/build/classes/java/main/com/example]
+18:00:01.139 [Test worker] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [/Users/jenix/IdeaProjects/test_neofrs2/build/classes/java/main/com/example] for files matching pattern [/Users/jenix/IdeaProjects/test_neofrs2/build/classes/java/main/com/example/*.class]
+18:00:01.140 [Test worker] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved location pattern [classpath*:com/example/*.class] to resources [file [/Users/jenix/IdeaProjects/test_neofrs2/build/classes/java/main/com/example/TestNeofrsApplication.class]]
+18:00:01.164 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/Users/jenix/IdeaProjects/test_neofrs2/build/classes/java/main/com/example/TestNeofrsApplication.class]
+18:00:01.165 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.TestNeofrsApplication for test class com.example.test_neofrs.TestNeofrsApplicationTests
+18:00:01.297 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.example.test_neofrs.TestNeofrsApplicationTests]: using defaults.
+18:00:01.303 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener]
+18:00:01.323 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@140784b5, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6dbecc09, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@28b26b44, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@7c2f2ca2, org.springframework.test.context.support.DirtiesContextTestExecutionListener@54a52dbe, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4fe06da7, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@74b3c754, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@71fcaf5c, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@cc9a400, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@40087d6b, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@2aeb9b59, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@3e795717]
+18:00:01.325 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.example.test_neofrs.TestNeofrsApplicationTests]
+18:00:01.326 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.example.test_neofrs.TestNeofrsApplicationTests]
+18:00:01.327 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.example.test_neofrs.TestNeofrsApplicationTests]
+18:00:01.328 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.example.test_neofrs.TestNeofrsApplicationTests]
+18:00:01.333 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@36e7a800 testClass = TestNeofrsApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@22d9c76a testClass = TestNeofrsApplicationTests, locations = '{}', classes = '{class com.example.TestNeofrsApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@2514a877, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@66a96cf6, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@1d78d5f1, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@247189f3], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; true]], class annotated with @DirtiesContext [false] with mode [null].
+18:00:01.333 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.example.test_neofrs.TestNeofrsApplicationTests]
+18:00:01.334 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.example.test_neofrs.TestNeofrsApplicationTests]
+18:00:01.348 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Adding PropertySource 'systemProperties' with lowest search precedence
+18:00:01.348 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Adding PropertySource 'systemEnvironment' with lowest search precedence
+18:00:01.349 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [MapPropertySource@2021893234 {name='systemProperties', properties={java.runtime.name=Java(TM) SE Runtime Environment, sun.boot.library.path=/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/lib, java.vm.version=25.191-b12, gopherProxySet=false, java.vm.vendor=Oracle Corporation, java.vendor.url=http://java.oracle.com/, path.separator=:, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, file.encoding.pkg=sun.io, sun.java.launcher=SUN_STANDARD, user.country=TW, sun.os.patch.level=unknown, java.vm.specification.name=Java Virtual Machine Specification, user.dir=/Users/jenix/IdeaProjects/test_neofrs2, java.runtime.version=1.8.0_191-b12, java.awt.graphicsenv=sun.awt.CGraphicsEnvironment, java.endorsed.dirs=/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/lib/endorsed, os.arch=x86_64, java.io.tmpdir=/var/folders/z_/v0sqr1ys3h96fw3wsds86k9w0000gn/T/, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, user.variant=, os.name=Mac OS X, sun.jnu.encoding=UTF-8, java.library.path=/Users/jenix/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:., java.specification.name=Java Platform API Specification, java.class.version=52.0, org.gradle.native=false, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, os.version=10.12.6, http.nonProxyHosts=local|*.local|169.254/16|*.169.254/16, user.home=/Users/jenix, user.timezone=Asia/Taipei, java.awt.printerjob=sun.lwawt.macosx.CPrinterJob, file.encoding=UTF-8, java.specification.version=1.8, java.class.path=/Users/jenix/IdeaProjects/test_neofrs2/build/classes/java/test:/Users/jenix/IdeaProjects/test_neofrs2/build/resources/test:/Users/jenix/IdeaProjects/test_neofrs2/build/classes/java/main:/Users/jenix/IdeaProjects/test_neofrs2/build/resources/main:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-test/2.0.3.RELEASE/1c624b1cc217bac010abce7a28df8169af4a7fa0/spring-boot-starter-test-2.0.3.RELEASE.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-web/2.0.3.RELEASE/41fd4180bea3813de8f3c602b5a126218360315b/spring-boot-starter-web-2.0.3.RELEASE.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-data-jpa/2.0.3.RELEASE/56c909f49b5385793942158e143187ecc8c7b54a/spring-boot-starter-data-jpa-2.0.3.RELEASE.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-thymeleaf/2.0.3.RELEASE/7a8cf11f5b7faa244e1979df491811bc0c858743/spring-boot-starter-thymeleaf-2.0.3.RELEASE.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-json/2.0.3.RELEASE/2e389a8727588c549c28bb277f0f573f65554850/spring-boot-starter-json-2.0.3.RELEASE.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-aop/2.0.3.RELEASE/a78c7bc25fd51b217f078421dc40d13ddc3b9f8f/spring-boot-starter-aop-2.0.3.RELEASE.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-jdbc/2.0.3.RELEASE/4f5f3411692a0f5efb60f7f583bdfcf49199a3d4/spring-boot-starter-jdbc-2.0.3.RELEASE.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter/2.0.3.RELEASE/ffaa050dbd36b0441645598f1a7ddaf67fd5e678/spring-boot-starter-2.0.3.RELEASE.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/5.0.7.RELEASE/751c871527ec7ff335ffc76f2e737e297c0a8d30/spring-webmvc-5.0.7.RELEASE.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/5.0.7.RELEASE/2e04c6c2922fbfa06b5948be14a5782db168b6ec/spring-web-5.0.7.RELEASE.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-jpa/2.0.8.RELEASE/8b874afd15da2b4d2d9b8431ad2be0c6829e41fe/spring-data-jpa-2.0.8.RELEASE.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.springframework/spring-test/5.0.7.RELEASE/bcb7505a316ea34b7e9a7ae5d4921be5b475c02d/spring-test-5.0.7.RELEASE.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-devtools/2.0.3.RELEASE/478e12e423b45d182a409f12a28fb9f0cddf84bf/spring-boot-devtools-2.0.3.RELEASE.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-test-autoconfigure/2.0.3.RELEASE/54e7d2167f2b926bf16a0ef8b91b6bfbd43826e7/spring-boot-test-autoconfigure-2.0.3.RELEASE.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-autoconfigure/2.0.3.RELEASE/11bc4cc96b08fabad2b3186755818fa0b32d83f/spring-boot-autoconfigure-2.0.3.RELEASE.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-test/2.0.3.RELEASE/5c9b4bb6cfce9ef6e53a0ff5fc4a7ff2867871d8/spring-boot-test-2.0.3.RELEASE.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/2.0.3.RELEASE/b874870d915adbc3dd932e19077d3d45c8e54aa0/spring-boot-2.0.3.RELEASE.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/5.0.7.RELEASE/243a23f8968de8754d8199d669780d683ab177bd/spring-context-5.0.7.RELEASE.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/5.0.7.RELEASE/fdd0b6aa3c9c7a188c3bfbf6dfd8d40e843be9ef/spring-aop-5.0.7.RELEASE.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.springframework/spring-orm/5.0.7.RELEASE/4deed5f4a38d62f9dba7db8e010da8b49e322757/spring-orm-5.0.7.RELEASE.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.springframework/spring-jdbc/5.0.7.RELEASE/9c78c6b9a6c603f6589b480e165939cde7bab7f9/spring-jdbc-5.0.7.RELEASE.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-commons/2.0.8.RELEASE/5c19af63b5acb0eab39066684e813d5ecd9d03b7/spring-data-commons-2.0.8.RELEASE.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.springframework/spring-tx/5.0.7.RELEASE/4ca59b21c61162adb146ad1b40c30b60d8dc42b8/spring-tx-5.0.7.RELEASE.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/5.0.7.RELEASE/c1196cb3e56da83e3c3a02ef323699f4b05feedc/spring-beans-5.0.7.RELEASE.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/5.0.7.RELEASE/ca01fb473f53dd0ee3c85663b26d5dc325602057/spring-expression-5.0.7.RELEASE.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/5.0.7.RELEASE/54b731178d81e66eca9623df772ff32718208137/spring-core-5.0.7.RELEASE.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-tomcat/2.0.3.RELEASE/25a51a75bfb997b7b95d6760178ee3303863ec4b/spring-boot-starter-tomcat-2.0.3.RELEASE.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.webjars/bootstrap/4.1.1/cf2c181ebc4c1b0ce34705355d17fa2828fede99/bootstrap-4.1.1.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.webjars/jquery/3.3.1-1/1a206dd935b3379b08111feb8fcfdcd81739a480/jquery-3.3.1-1.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.xhtmlrenderer/flying-saucer-pdf-itext5/9.1.6/594a31543f139456e26ff07b3e592ae0d979b4f3/flying-saucer-pdf-itext5-9.1.6.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.xhtmlrenderer/flying-saucer-core/9.1.6/d82caf70f624eac9fd081539c0dc7b317968b956/flying-saucer-core-9.1.6.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/net.sf.jtidy/jtidy/r938/ab08d87a225a715a69107732b67f21e1da930349/jtidy-r938.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/joda-time/joda-time/2.9.4/1c295b462f16702ebe720bbb08f62e1ba80da41b/joda-time-2.9.4.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/com.jayway.jsonpath/json-path/2.4.0/765a4401ceb2dc8d40553c2075eb80a8fa35c2ae/json-path-2.4.0.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/net.minidev/json-smart/1.0.9/740cece59da8261afe49585a0ea207981ac5aeb/json-smart-1.0.9.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/mysql/mysql-connector-java/5.1.46/9a3e63b387e376364211e96827bc27db8d7a92e9/mysql-connector-java-5.1.46.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/com.microsoft.sqlserver/mssql-jdbc/6.2.2.jre8/a9ee2b0234f623f49fad888550011035b99d0861/mssql-jdbc-6.2.2.jre8.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.springframework/spring-jcl/5.0.7.RELEASE/699016ddf454c2c167d9f84ae5777eccadf54728/spring-jcl-5.0.7.RELEASE.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/javax.annotation/javax.annotation-api/1.3.2/934c04d3cfef185a8008e7bf34331b79730a9d43/javax.annotation-api-1.3.2.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-websocket/8.5.31/6564e716b89de5eaa0dd234ae7989576503ddf3/tomcat-embed-websocket-8.5.31.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/8.5.31/f5adf7ed8c34aa005b22b6a2dc7b6796e10e9c79/tomcat-embed-core-8.5.31.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-el/8.5.31/3a536e1ac71b82627c3a7408eb38fa0704cb9034/tomcat-embed-el-8.5.31.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.hibernate.validator/hibernate-validator/6.0.10.Final/4236051a8d209c00f85e70918d5e26d9f3e5201e/hibernate-validator-6.0.10.Final.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-core/5.2.17.Final/f2dc36470e7a2ffcf6106bb1625ecf5b54bb5f65/hibernate-core-5.2.17.Final.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/javax.transaction/javax.transaction-api/1.2/d81aff979d603edd90dcd8db2abc1f4ce6479e3e/javax.transaction-api-1.2.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aspects/5.0.7.RELEASE/afd3f7ecb9d7c2cb3160563f9f64b72223bb0265/spring-aspects-5.0.7.RELEASE.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.webjars/popper.js/1.14.1/45b284e3e86f310b72e0d78ec298f5d1d2c68b62/popper.js-1.14.1.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/com.itextpdf/itextpdf/5.5.11/4c66347f10e9dbf062a086e1223a0d0a9eeb3677/itextpdf-5.5.11.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.thymeleaf/thymeleaf-spring5/3.0.9.RELEASE/abf84efd83808a70d982d2790f7f3a7bd3a39cf4/thymeleaf-spring5-3.0.9.RELEASE.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.thymeleaf.extras/thymeleaf-extras-java8time/3.0.1.RELEASE/d23760d1e53cd70c489ef40dc94ee6bd2371cceb/thymeleaf-extras-java8time-3.0.1.RELEASE.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/2973d150c0dc1fefe998f834810d68f278ea58ec/junit-4.12.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.assertj/assertj-core/3.9.1/c5ce126b15f28d56cd8f960c1a6a058b9c9aea87/assertj-core-3.9.1.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.mockito/mockito-core/2.15.0/b84bfbbc29cd22c9529409627af6ea2897f4fa85/mockito-core-2.15.0.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-library/1.3/4785a3c21320980282f9f33d0d1264a69040538f/hamcrest-library-1.3.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/42a25dc3219429f0e5d060061f71acb49bf010a0/hamcrest-core-1.3.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.skyscreamer/jsonassert/1.5.0/6c9d5fe2f59da598d9aefc1cfc6528ff3cf32df3/jsonassert-1.5.0.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.xmlunit/xmlunit-core/2.5.1/4ffdb346572a7356f7521cd3119ce5287d2e339d/xmlunit-core-2.5.1.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-logging/2.0.3.RELEASE/7caad34f01d2688919e15e09a90467963e3d5190/spring-boot-starter-logging-2.0.3.RELEASE.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.yaml/snakeyaml/1.19/2d998d3d674b172a588e54ab619854d073f555b5/snakeyaml-1.19.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/2.9.6/456895fc91bf7180b216fead220373e6278230c9/jackson-datatype-jdk8-2.9.6.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/2.9.6/ea54f6193d224e5e5732bbd4262327eb465397c2/jackson-datatype-jsr310-2.9.6.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.module/jackson-module-parameter-names/2.9.6/129acd77a4b6ee30d62d3a0899b1344c8ec2bff8/jackson-module-parameter-names-2.9.6.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.9.6/cfa4f316351a91bfd95cb0644c6a2c95f52db1fc/jackson-databind-2.9.6.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/javax.validation/validation-api/2.0.1.Final/cb855558e6271b1b32e716d24cb85c7f583ce09e/validation-api-2.0.1.Final.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.hibernate.common/hibernate-commons-annotations/5.0.1.Final/71e1cff3fcb20d3b3af4f3363c3ddb24d33c6879/hibernate-commons-annotations-5.0.1.Final.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.jboss.logging/jboss-logging/3.3.2.Final/3789d00e859632e6c6206adc0c71625559e6e3b0/jboss-logging-3.3.2.Final.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/com.fasterxml/classmate/1.3.4/3d5f48f10bbe4eb7bd862f10c0583be2e0053c6/classmate-1.3.4.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.aspectj/aspectjweaver/1.8.13/ad94df2a28d658a40dc27bbaff6a1ce5fbf04e9b/aspectjweaver-1.8.13.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/com.zaxxer/HikariCP/2.7.9/a83113d2c091d0d0f853dad3217bd7df3beb6ae3/HikariCP-2.7.9.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.hibernate.javax.persistence/hibernate-jpa-2.1-api/1.0.2.Final/52afb5762c704a6b586e27742470c08f91877fc1/hibernate-jpa-2.1-api-1.0.2.Final.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.javassist/javassist/3.22.0-GA/3e83394258ae2089be7219b971ec21a8288528ad/javassist-3.22.0-GA.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/antlr/antlr/2.7.7/83cd2cd674a217ade95a4bb83a8a14f351f48bd0/antlr-2.7.7.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.jboss/jandex/2.0.3.Final/bfc4d6257dbff7a33a357f0de116be6ff951d849/jandex-2.0.3.Final.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/dom4j/dom4j/1.6.1/5d3ccc056b6f056dbf0dddfdf43894b9065a8f94/dom4j-1.6.1.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.thymeleaf/thymeleaf/3.0.9.RELEASE/64185cca50ac808ad034841c84b4013f955465d2/thymeleaf-3.0.9.RELEASE.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-classic/1.2.3/7c4f3c474fb2c041d8028740440937705ebb473a/logback-classic-1.2.3.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-to-slf4j/2.10.0/f7e631ccf49cfc0aefa4a2a728da7d374c05bd3c/log4j-to-slf4j-2.10.0.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.slf4j/jul-to-slf4j/1.7.25/af5364cd6679bfffb114f0dec8a157aaa283b76/jul-to-slf4j-1.7.25.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.25/da76ca59f6a57ee3102f8f9bd9cee742973efa8a/slf4j-api-1.7.25.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy/1.7.11/f02857a4e2c66ccbe7aaad6100a0a6c461bce9b3/byte-buddy-1.7.11.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.7.11/b425a8933ca07edd03c6dbc8bc3b595fba9780de/byte-buddy-agent-1.7.11.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.objenesis/objenesis/2.6/639033469776fd37c08358c6b92a4761feb2af4b/objenesis-2.6.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/com.vaadin.external.google/android-json/0.0.20131108.vaadin1/fa26d351fe62a6a17f5cda1287c1c6110dec413f/android-json-0.0.20131108.vaadin1.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.9.0/7c10d545325e3a6e72e06381afe469fd40eb701/jackson-annotations-2.9.0.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.9.6/4e393793c37c77e042ccc7be5a914ae39251b365/jackson-core-2.9.6.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.attoparser/attoparser/2.0.4.RELEASE/5cf02c4d8303a81f0c80971bb1dcd40d3ba96009/attoparser-2.0.4.RELEASE.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.unbescape/unbescape/1.1.5.RELEASE/46dc644ea9c234317d926ebac5bf5d8f114dc1ba/unbescape-1.1.5.RELEASE.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-core/1.2.3/864344400c3d4d92dfeb0a305dc87d953677c03c/logback-core-1.2.3.jar:/Users/jenix/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.10.0/fec5797a55b786184a537abd39c3fa1449d752d6/log4j-api-2.10.0.jar, user.name=jenix, java.vm.specification.version=1.8, sun.java.command=worker.org.gradle.process.internal.worker.GradleWorkerMain 'Gradle Test Executor 4', java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre, sun.arch.data.model=64, user.language=zh, java.specification.vendor=Oracle Corporation, awt.toolkit=sun.lwawt.macosx.LWCToolkit, java.vm.info=mixed mode, java.version=1.8.0_191, java.ext.dirs=/Users/jenix/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java, sun.boot.class.path=/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/classes, java.vendor=Oracle Corporation, org.gradle.test.worker=4, file.separator=/, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, sun.io.unicode.encoding=UnicodeBig, sun.cpu.endian=little, socksNonProxyHosts=local|*.local|169.254/16|*.169.254/16, ftp.nonProxyHosts=local|*.local|169.254/16|*.169.254/16, sun.cpu.isalist=}}, SystemEnvironmentPropertySource@2060198681 {name='systemEnvironment', properties={PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:~/.dotnet/tools:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/usr/local/mysql/bin/:/Users/jenix/Library/Android/sdk/tools:/Users/jenix/Library/Android/sdk/platform-tools, SHELL=/bin/bash, VERSIONER_PYTHON_PREFER_32_BIT=no, USER=jenix, ANDROID_HOME=/Users/jenix/Library/Android/sdk, TMPDIR=/var/folders/z_/v0sqr1ys3h96fw3wsds86k9w0000gn/T/, SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.ZIQby7tC1P/Listeners, XPC_FLAGS=0x0, VERSIONER_PYTHON_VERSION=2.7, __CF_USER_TEXT_ENCODING=0x1F5:0x2:0x35, Apple_PubSub_Socket_Render=/private/tmp/com.apple.launchd.9h5DuhEjfM/Render, LOGNAME=jenix, LC_CTYPE=zh_TW.UTF-8, JAVA_MAIN_CLASS_7469=worker.org.gradle.process.internal.worker.GradleWorkerMain, XPC_SERVICE_NAME=com.jetbrains.intellij.6576, HOME=/Users/jenix}}]
+18:00:01.350 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=-1}
+18:00:01.350 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Adding PropertySource 'Inlined Test Properties' with highest search precedence
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.0.3.RELEASE)
+
+2019-02-27 18:00:01.579  INFO 7469 --- [    Test worker] c.e.t.TestNeofrsApplicationTests         : Starting TestNeofrsApplicationTests on JyWangde-MBP with PID 7469 (started by jenix in /Users/jenix/IdeaProjects/test_neofrs2)
+2019-02-27 18:00:01.580  INFO 7469 --- [    Test worker] c.e.t.TestNeofrsApplicationTests         : The following profiles are active: dev3
+2019-02-27 18:00:01.614  INFO 7469 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@211120bf: startup date [Wed Feb 27 18:00:01 CST 2019]; root of context hierarchy
+2019-02-27 18:00:02.855  INFO 7469 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$77a736ed] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-27 18:00:03.306  INFO 7469 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-02-27 18:00:03.553  INFO 7469 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-02-27 18:00:03.622  INFO 7469 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-02-27 18:00:03.642  INFO 7469 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-02-27 18:00:03.716  INFO 7469 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.17.Final}
+2019-02-27 18:00:03.717  INFO 7469 --- [    Test worker] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-02-27 18:00:03.751  INFO 7469 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-02-27 18:00:03.883  INFO 7469 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-02-27 18:00:04.331  INFO 7469 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-02-27 18:00:05.141  INFO 7469 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-27 18:00:05.394  WARN 7469 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerAdapter' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]: Factory method 'requestMappingHandlerAdapter' threw exception; nested exception is java.lang.NoClassDefFoundError: net/minidev/json/writer/JsonReaderI
+2019-02-27 18:00:05.395  INFO 7469 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-02-27 18:00:05.396  INFO 7469 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-02-27 18:00:05.404  INFO 7469 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-02-27 18:00:05.415  INFO 7469 --- [    Test worker] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-02-27 18:00:05.424 ERROR 7469 --- [    Test worker] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerAdapter' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]: Factory method 'requestMappingHandlerAdapter' threw exception; nested exception is java.lang.NoClassDefFoundError: net/minidev/json/writer/JsonReaderI
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:590) ~[spring-beans-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1256) ~[spring-beans-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1105) ~[spring-beans-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543) ~[spring-beans-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:503) ~[spring-beans-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:760) ~[spring-beans-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869) ~[spring-context-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) ~[spring-context-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759) ~[spring-boot-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395) ~[spring-boot-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327) ~[spring-boot-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:139) [spring-boot-test-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) [spring-test-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117) [spring-test-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108) [spring-test-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190) [spring-test-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132) [spring-test-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246) [spring-test-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) [spring-test-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) [spring-test-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) [spring-test-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) [spring-test-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) [spring-test-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:106) [gradle-testing-jvm-4.10.2.jar:4.10.2]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58) [gradle-testing-jvm-4.10.2.jar:4.10.2]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38) [gradle-testing-jvm-4.10.2.jar:4.10.2]
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:66) [gradle-testing-jvm-4.10.2.jar:4.10.2]
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51) [gradle-testing-base-4.10.2.jar:4.10.2]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_191]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_191]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_191]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_191]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-4.10.2.jar:4.10.2]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-4.10.2.jar:4.10.2]
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32) [gradle-messaging-4.10.2.jar:4.10.2]
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93) [gradle-messaging-4.10.2.jar:4.10.2]
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source) [na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:117) [gradle-testing-base-4.10.2.jar:4.10.2]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_191]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_191]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_191]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_191]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-4.10.2.jar:4.10.2]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-4.10.2.jar:4.10.2]
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:155) [gradle-messaging-4.10.2.jar:4.10.2]
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:137) [gradle-messaging-4.10.2.jar:4.10.2]
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404) [gradle-messaging-4.10.2.jar:4.10.2]
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63) [gradle-base-services-4.10.2.jar:4.10.2]
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46) [gradle-base-services-4.10.2.jar:4.10.2]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_191]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_191]
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55) [gradle-base-services-4.10.2.jar:4.10.2]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_191]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]: Factory method 'requestMappingHandlerAdapter' threw exception; nested exception is java.lang.NoClassDefFoundError: net/minidev/json/writer/JsonReaderI
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:582) ~[spring-beans-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	... 66 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: net/minidev/json/writer/JsonReaderI
+	at com.jayway.jsonpath.internal.DefaultsImpl.&lt;init&gt;(DefaultsImpl.java:17) ~[json-path-2.4.0.jar:2.4.0]
+	at com.jayway.jsonpath.internal.DefaultsImpl.&lt;clinit&gt;(DefaultsImpl.java:15) ~[json-path-2.4.0.jar:2.4.0]
+	at com.jayway.jsonpath.Configuration.getEffectiveDefaults(Configuration.java:48) ~[json-path-2.4.0.jar:2.4.0]
+	at com.jayway.jsonpath.Configuration.access$000(Configuration.java:34) ~[json-path-2.4.0.jar:2.4.0]
+	at com.jayway.jsonpath.Configuration$ConfigurationBuilder.build(Configuration.java:229) ~[json-path-2.4.0.jar:2.4.0]
+	at org.springframework.data.web.JsonProjectingMethodInterceptorFactory.&lt;init&gt;(JsonProjectingMethodInterceptorFactory.java:75) ~[spring-data-commons-2.0.8.RELEASE.jar:2.0.8.RELEASE]
+	at org.springframework.data.web.ProjectingJackson2HttpMessageConverter.initProjectionFactory(ProjectingJackson2HttpMessageConverter.java:87) ~[spring-data-commons-2.0.8.RELEASE.jar:2.0.8.RELEASE]
+	at org.springframework.data.web.ProjectingJackson2HttpMessageConverter.&lt;init&gt;(ProjectingJackson2HttpMessageConverter.java:72) ~[spring-data-commons-2.0.8.RELEASE.jar:2.0.8.RELEASE]
+	at org.springframework.data.web.config.SpringDataWebConfiguration.extendMessageConverters(SpringDataWebConfiguration.java:163) ~[spring-data-commons-2.0.8.RELEASE.jar:2.0.8.RELEASE]
+	at org.springframework.web.servlet.config.annotation.WebMvcConfigurerComposite.extendMessageConverters(WebMvcConfigurerComposite.java:144) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration.extendMessageConverters(DelegatingWebMvcConfiguration.java:123) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport.getMessageConverters(WebMvcConfigurationSupport.java:756) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport.requestMappingHandlerAdapter(WebMvcConfigurationSupport.java:563) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration.requestMappingHandlerAdapter(WebMvcAutoConfiguration.java:467) ~[spring-boot-autoconfigure-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration$$EnhancerBySpringCGLIB$$e294876d.CGLIB$requestMappingHandlerAdapter$4(&lt;generated&gt;) ~[spring-boot-autoconfigure-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration$$EnhancerBySpringCGLIB$$e294876d$$FastClassBySpringCGLIB$$c7d84d53.invoke(&lt;generated&gt;) ~[spring-boot-autoconfigure-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228) ~[spring-core-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:361) ~[spring-context-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration$$EnhancerBySpringCGLIB$$e294876d.requestMappingHandlerAdapter(&lt;generated&gt;) ~[spring-boot-autoconfigure-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_191]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_191]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_191]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_191]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	... 67 common frames omitted
+Caused by: java.lang.ClassNotFoundException: net.minidev.json.writer.JsonReaderI
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382) ~[na:1.8.0_191]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[na:1.8.0_191]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349) ~[na:1.8.0_191]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_191]
+	... 91 common frames omitted
+
+2019-02-27 18:00:05.435 ERROR 7469 --- [    Test worker] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@140784b5] to prepare test instance [com.example.test_neofrs.TestNeofrsApplicationTests@64ad71a3]
+
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:125) ~[spring-test-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108) ~[spring-test-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190) ~[spring-test-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132) ~[spring-test-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246) ~[spring-test-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) [spring-test-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) [spring-test-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) [spring-test-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) [spring-test-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) [spring-test-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:106) [gradle-testing-jvm-4.10.2.jar:4.10.2]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58) [gradle-testing-jvm-4.10.2.jar:4.10.2]
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38) [gradle-testing-jvm-4.10.2.jar:4.10.2]
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:66) [gradle-testing-jvm-4.10.2.jar:4.10.2]
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51) [gradle-testing-base-4.10.2.jar:4.10.2]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_191]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_191]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_191]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_191]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-4.10.2.jar:4.10.2]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-4.10.2.jar:4.10.2]
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32) [gradle-messaging-4.10.2.jar:4.10.2]
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93) [gradle-messaging-4.10.2.jar:4.10.2]
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source) [na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:117) [gradle-testing-base-4.10.2.jar:4.10.2]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_191]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_191]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_191]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_191]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35) [gradle-messaging-4.10.2.jar:4.10.2]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-4.10.2.jar:4.10.2]
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:155) [gradle-messaging-4.10.2.jar:4.10.2]
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:137) [gradle-messaging-4.10.2.jar:4.10.2]
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404) [gradle-messaging-4.10.2.jar:4.10.2]
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63) [gradle-base-services-4.10.2.jar:4.10.2]
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46) [gradle-base-services-4.10.2.jar:4.10.2]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_191]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_191]
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55) [gradle-base-services-4.10.2.jar:4.10.2]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_191]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerAdapter' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]: Factory method 'requestMappingHandlerAdapter' threw exception; nested exception is java.lang.NoClassDefFoundError: net/minidev/json/writer/JsonReaderI
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:590) ~[spring-beans-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1256) ~[spring-beans-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1105) ~[spring-beans-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543) ~[spring-beans-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:503) ~[spring-beans-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:760) ~[spring-beans-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869) ~[spring-context-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) ~[spring-context-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759) ~[spring-boot-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395) ~[spring-boot-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327) ~[spring-boot-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:139) ~[spring-boot-test-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117) ~[spring-test-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	... 49 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]: Factory method 'requestMappingHandlerAdapter' threw exception; nested exception is java.lang.NoClassDefFoundError: net/minidev/json/writer/JsonReaderI
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:582) ~[spring-beans-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	... 66 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: net/minidev/json/writer/JsonReaderI
+	at com.jayway.jsonpath.internal.DefaultsImpl.&lt;init&gt;(DefaultsImpl.java:17) ~[json-path-2.4.0.jar:2.4.0]
+	at com.jayway.jsonpath.internal.DefaultsImpl.&lt;clinit&gt;(DefaultsImpl.java:15) ~[json-path-2.4.0.jar:2.4.0]
+	at com.jayway.jsonpath.Configuration.getEffectiveDefaults(Configuration.java:48) ~[json-path-2.4.0.jar:2.4.0]
+	at com.jayway.jsonpath.Configuration.access$000(Configuration.java:34) ~[json-path-2.4.0.jar:2.4.0]
+	at com.jayway.jsonpath.Configuration$ConfigurationBuilder.build(Configuration.java:229) ~[json-path-2.4.0.jar:2.4.0]
+	at org.springframework.data.web.JsonProjectingMethodInterceptorFactory.&lt;init&gt;(JsonProjectingMethodInterceptorFactory.java:75) ~[spring-data-commons-2.0.8.RELEASE.jar:2.0.8.RELEASE]
+	at org.springframework.data.web.ProjectingJackson2HttpMessageConverter.initProjectionFactory(ProjectingJackson2HttpMessageConverter.java:87) ~[spring-data-commons-2.0.8.RELEASE.jar:2.0.8.RELEASE]
+	at org.springframework.data.web.ProjectingJackson2HttpMessageConverter.&lt;init&gt;(ProjectingJackson2HttpMessageConverter.java:72) ~[spring-data-commons-2.0.8.RELEASE.jar:2.0.8.RELEASE]
+	at org.springframework.data.web.config.SpringDataWebConfiguration.extendMessageConverters(SpringDataWebConfiguration.java:163) ~[spring-data-commons-2.0.8.RELEASE.jar:2.0.8.RELEASE]
+	at org.springframework.web.servlet.config.annotation.WebMvcConfigurerComposite.extendMessageConverters(WebMvcConfigurerComposite.java:144) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration.extendMessageConverters(DelegatingWebMvcConfiguration.java:123) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport.getMessageConverters(WebMvcConfigurationSupport.java:756) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport.requestMappingHandlerAdapter(WebMvcConfigurationSupport.java:563) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration.requestMappingHandlerAdapter(WebMvcAutoConfiguration.java:467) ~[spring-boot-autoconfigure-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration$$EnhancerBySpringCGLIB$$e294876d.CGLIB$requestMappingHandlerAdapter$4(&lt;generated&gt;) ~[spring-boot-autoconfigure-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration$$EnhancerBySpringCGLIB$$e294876d$$FastClassBySpringCGLIB$$c7d84d53.invoke(&lt;generated&gt;) ~[spring-boot-autoconfigure-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228) ~[spring-core-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:361) ~[spring-context-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration$$EnhancerBySpringCGLIB$$e294876d.requestMappingHandlerAdapter(&lt;generated&gt;) ~[spring-boot-autoconfigure-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_191]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_191]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_191]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_191]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	... 67 common frames omitted
+Caused by: java.lang.ClassNotFoundException: net.minidev.json.writer.JsonReaderI
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382) ~[na:1.8.0_191]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[na:1.8.0_191]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349) ~[na:1.8.0_191]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_191]
+	... 91 common frames omitted
+
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 4.10.2</a> at 2019/2/27 下午 06:00:05</p>
+</div>
+</div>
+</body>
+</html>

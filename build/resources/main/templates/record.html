@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Record</title>
+    <script>
+        function getHitRecord(id) {
+            $.ajax({
+                contentType: 'application/json; charset=UTF-8',
+                type: "post",
+                url: "record/getHitRecordAjax",
+                data: id,
+                sync: true,
+                success: function (data) {
+                    var str = "";
+                    console.log(data);
+                    $.each(data, function (index, value) {
+                        str += "<option>" + value.id + value.name + "</option>";
+                    });
+                    $("#showHitRecord").empty();
+                    $("#showHitRecord").append(str);
+                },
+                error: function (jqXHR, exception) {
+                    console.log("ERRRRRRROOOOORRRRR");
+                    $("#showHitRecord").empty();
+                },
+            });
+        }
+    </script>
+
+</head>
+<body>
+<p>I am record</p>
+
+<div>
+    <label for="showHitRecord">See Hits</label>
+    <select class="" name="showHitRecord" id="showHitRecord">
+    </select>
+</div>
+
+
+</body>
+
+<script>
+
+
+</script>
+
+</html>
